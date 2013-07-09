@@ -1,0 +1,51 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	width: 600px;
+	margin: 10px;
+	font-family: sans-serif;
+}
+
+div#thumb img{
+	float: left;
+	margin-right: 30px;
+}
+
+div.preview{
+	float: right;
+	width: 370px;
+}
+
+div.preview ul{
+	list-style: none;
+	font-size: 14px;
+}
+
+div.preview ul li{
+	display: inline;
+	font-style: italic;
+}
+
+div.preview li a{
+	text-decoration: none;
+}
+
+div.preview h2{
+	font-size: 34px;
+}
+
+div#article_body{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+div.preview > p{
+	font-size: 12px;
+	font-style: italic;
+	margin: 10px 0;
+}
+span a{
+	float: right;
+}

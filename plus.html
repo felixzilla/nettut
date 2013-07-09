@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>google + design</title>
+	<style type="text/css" media="screen">
+
+	@font-face {
+	    font-family: 'Roboto';
+	    src: url('font/Roboto-Light-webfont.eot');
+	    src: url('font/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('font/Roboto-Light-webfont.woff') format('woff'),
+	         url('font/Roboto-Light-webfont.ttf') format('truetype'),
+	         url('font/Roboto-Light-webfont.svg#RobotoLight') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+	
+	body{
+		
+		width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: #E5E5E5;
+		font: normal 13px Roboto, Tahoma , arial, sans-serif;
+		font-weight: normal;
+		overflow-y: scroll;
+		visibility:visible;
+	}
+	
+	.c-panel-1{
+		background-color: #f5f5f5;
+		
+		border-bottom: 2px solid #D8D8D8;
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+		
+		border-left-color: #D8D8D8;
+		border-left-style: solid;
+		border-left-width: 1px;
+		
+		border-right-color: #D8D8D8;
+		border-right-style: solid;
+		border-right-width: 1px;
+		
+		border-top-color: #D8D8D8;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		
+		margin: 10px 0px 20px 0px;
+		padding: 15px;
+	}
+	
+	.c-panel-2{
+		background-color: #f5f5f5;
+		
+		border: 0px none rgba(0, 0, 0, 0);
+		border-radius: 0px;
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 40px 0px;
+		
+		margin: 10px 0px 20px 0px;
+		left: 70px;
+		padding: 30px 30px 15px 30px;
+		
+		visibility: visible;
+		white-space: normal;
+		width: 540px;
+		z-index: 4;
+	}
+	
+	.c-panel-3{
+		background-color: #f5f5f5;
+		
+		border: 1px solid #D8D8D8;
+		border-radius: 3px;
+		border-bottom: 2px solid #D8D8D8;
+		
+		margin-top: 10px;
+		left: 70px;
+		
+		visibility: visible;
+		white-space: normal;
+		width: 540px;
+		z-index: 4;
+	}
+	
+	.c-panel-input{
+		background-color: white;
+		
+		border: 1px solid #E4E4E4;
+		/*border-bottom-color: #404040;
+		border-bottom-style: none;
+		border-bottom-width: 0px;*/
+		box-shadow: rgba(0, 0, 0, 0.0392157) 0px 2px 4px 0px inset;
+		
+		color: #404040;
+		cursor: text;
+		font-size: 16px;
+		
+		height: 68px;
+		outline-color: #404040;
+		padding: 10px 0px 0px 10px;
+		
+		/*margin-bottom: 20px;*/
+	}
+	
+	.c-arrow-down{
+		border-left-color: rgba(0, 0, 0, 0);
+		border-left-style: solid;
+		border-left-width: 10px;
+		border-right-color: rgba(0, 0, 0, 0);
+		border-right-style: solid;
+		border-right-width: 10px;
+		border-top-color: rgb(255, 255, 255);
+		border-top-style: solid;
+		border-top-width: 10px;
+		
+		display: inline-block;
+		height: 0px;
+		line-height: normal;
+		margin-top: -2px;
+		
+		width: 0px;
+		margin-bottom: 20px;
+	}
+	
+	.c-alert{
+		background-attachment: scroll;
+		background-clip: border-box;
+		background-color: #FFF1A8;
+		background-size: auto;
+		border: 3px solid #FFF1A8;
+		border-radius: 3px;
+		font-weight: bold;
+		min-width: 200px;
+		width: 485px;
+		height: 24px;
+		line-height: 13px;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+		color: #000;
+		padding: 9px 15px 0px 15px;
+		text-align: center;
+		visibility: visible;
+	}
+	
+	.c-alert-error{
+		background-attachment: scroll;
+		background-clip: border-box;
+		background-color: rgb(204, 0, 0);
+		background-size: auto;
+		border: 3px solid rrgb(204, 0, 0);
+		border-radius: 3px;
+		font-weight: bold;
+		min-width: 200px;
+		width: 485px;
+		height: 24px;
+		line-height: 13px;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+		color: #fff;
+		padding: 9px 15px 0px 15px;
+		text-align: center;
+		visibility: visible;
+	}
+	
+	.c-btn-s{
+		background-color: #53A93F;
+		border: 1px solid rgba(0, 0, 0, 0);;
+		border-radius: 2px;
+		box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+		color: rgb(255, 255, 255);
+		cursor: default;
+		display: inline-block;
+		font-weight: bold;
+		height: 28px;
+		line-height: 28px;
+		margin-right: 8px;
+		min-width: 54px;
+		padding: 0px 8px;
+		text-align: center;
+		text-shadow: none;
+		visibility: visible;
+		white-space: nowrap;		
+	}
+	
+	.c-btn-s:hover{
+		background-color: rgb(101, 179, 69);
+		border-bottom: 1px solid rgb(76, 133, 52);	
+		box-shadow: rgb(76, 133, 52) 0px -1px 0px 0px inset;
+	}
+	.c-btn{
+		background-color: #fff;
+		border: 1px solid rgba(0, 0, 0, 0.14902);
+		border-radius: 2px;
+		box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+		color: rgb(64, 64, 64);
+		cursor: default;
+		display: inline-block;
+		font-weight: bold;
+		height: 28px;
+		line-height: 28px;
+		margin-right: 16px;
+		min-width: 54px;
+		outline-color: rgb(64, 64, 64);
+		outline-style: none;
+		outline-width: 0px;
+		padding: 0px 8px;
+		position: relative;
+		text-align: center;
+		visibility: visible;
+		white-space: nowrap;
+	}
+	
+	.c-btn:hover{
+		border: 1px solid rgb(184, 184, 184);
+		box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px 0px;
+	}
+	
+	.c-textbox{
+		background-color: #fff;
+		border: 1px solid #DDD;
+		color: #999;
+		cursor: text;
+		height: 24px;
+		line-height: 13px;
+		padding: 0px 5px;
+		width: 302px;
+		margin: 5px;
+		float: left;
+	}
+	
+	.c-textbox:hover .c-textbox:focus{
+		border: 1px solid #DDD;
+	}
+	
+	.c-rect-200{
+		width: 200px;
+		height: 200px;
+	}
+	
+	.c-rect{
+		max-width: 540px;
+		min-width: 330px;
+		
+		max-height: 178px;
+		min-height: 58px;		
+	}
+	
+	.c-rtip{
+		background-color: rgb(64, 64, 64);
+		float: right;
+		cursor: pointer;
+		height: 26px;
+		line-height: 26px;
+		margin-right: -4px;
+		padding-right: 4px;
+		width: 0px;
+	}
+	
+	.c-rtip-a{
+		background-color: rgba(64, 64, 64, 0.1);
+		color: #999;
+		float: right;
+		height: 26px;
+		line-height: 26px;
+		text-align: center;
+		font-size: 12px;
+		padding: 0px 5px;
+		text-decoration: none;
+	}
+	
+	.c-rtip-a:hover{
+		background-color: rgba(64, 64, 64, 1);
+		color: #fff;
+		font-weight: normal;
+	}
+	
+	.c-margin-top-5{
+		margin-top: 5px;
+	}
+	
+	.c-margin-top-20{
+		margin-top: 20px;
+	}
+	
+	</style>
+</head>
+<body>
+	
+	<div class="c-alert c-margin-top-20">
+		There was a problem completing this action. Please try again.
+	</div>
+	
+	<div class="c-alert-error c-margin-top-20">
+		Error loading Patients. Please try again.
+	</div>
+	<div class="c-panel-1 c-rect">
+		<div class="c-panel-input">
+			Share what's new...
+		</div>
+		
+		<div class="c-arrow-down">
+			
+		</div>
+		
+		<div class="c-btn-s">
+			Share
+		</div>
+		<div class="c-btn">
+			Cancel
+		</div>
+		
+	</div>
+	
+	<div class="c-panel-2 c-rect">
+		<div class="c-btn-s">
+			Share
+		</div>
+		<div class="c-btn">
+			Cancel
+		</div>
+	</div>
+	
+	<div class="c-panel-3 c-rect">
+		<div>
+			<input class="c-textbox" placeholder="Add Comment here."/>
+		</div>
+		<span class="c-rtip c-margin-top-5"></span>
+		<a class="c-rtip-a c-margin-top-5" href="#">#HolyKow</a>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		
+	</script>
+</body>
+</html>
